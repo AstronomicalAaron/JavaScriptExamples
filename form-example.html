@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            
+        </script>
+        <style>
+            .form-field {
+                margin: 0 0 2em;
+            }
+            .text-field input, select {
+                height: 30px;
+                float: right;
+            }
+            .text-field label {
+                line-height: 2;
+            }
+            .form-container {
+                width: 280px;
+                padding: 20px;
+                margin: 0 auto 0 auto;
+                border: 2px solid;
+                border-color: rgb(53, 53, 53);
+            }
+            .pmr-button-md {
+                height: auto;
+                background-color: rgb(211, 144, 0);
+                color: white;
+                font-weight: bold;
+                padding: 10px 20px 10px 20px;
+                border-color: rgb(211, 144, 0);;
+            }
+            .pmr-button-md :hover {
+                background-color: white;
+                color: gray;
+            }
+            .email-opt-in input {
+                vertical-align: middle;
+            }
+            .email-opt-in label span {
+                font-size: 12px;
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+<body>
+    <form class="form-container">
+        <div class="form-field text-field">
+            <label for="fname">First Name: </label>
+            <input type="text" name="fname">
+        </div>
+
+        <div class="form-field text-field">
+            <label for="lname">Last Name: </label>
+            <input type="text" name="fname">
+        </div>
+
+        <div class="form-field text-field">
+            <label for="gender">Gender: </label>
+            <select name="gender" id="gender-select">
+                <option value="">--Please choose an option--</option>
+                <option value="gmale">Male</option>
+                <option value="gfemale">Female</option>
+                <option value="gother">Other</option>
+            </select>
+        </div>
+
+        <div class="form-field text-field">
+            <label for="email">Email: </label>
+            <input type="email">
+        </div>
+
+        <div class="form-field text-field">
+            <label for="password">Password: </label>
+            <input type="password">
+        </div>
+
+        <div class="form-field email-opt-in">
+            <label>
+                <input type="checkbox" name="email-updates">
+                <span>would you like us to send you junk in your email?</span>
+            </label>
+        </div>
+
+        <div>
+            <input class="pmr-button-md" type="submit">
+        </div>
+    </form>
+</body>
+</html>
